@@ -15,3 +15,9 @@ variable "external_port" {
   description = "The local host port to map to the container"
   default     = 8088
 }
+
+variable "api_key" {
+  type        = string
+  description = "The secret API key for the application"
+  sensitive   = true # Blocks terminal logging
+}
